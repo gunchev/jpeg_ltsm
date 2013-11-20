@@ -1,0 +1,23 @@
+2009-04-20  Doncho N. Gunchev <dgunchev@gmail.com>
+
+    * Version 0.9.1, first public release.
+
+        * jpeg_ltsm.sh: Preserve ownership, mode and timestamps
+          of original file. Ownership might be lost if you do
+          not have enough permissions.
+
+
+
+2009-04-11  Doncho N. Gunchev <dgunchev@gmail.com>
+
+    * Version 0.9.0
+
+        * jpeg_ltsm.sh: Added Cancel button during conversion,
+          improved error handling.
+        * jpeg_ltsm.desktop: Partial Bulgarian translation.
+
+
+
+2009-04-01  Doncho N. Gunchev <dgunchev@gmail.com>
+
+    * Version 0.0.1, initial personal version.

@@ -1,0 +1,94 @@
+JPEG Lossless Transformation Service Menu for KDE 4 Installation Instructions
+=============================================================================
+
+
+.. contents::
+   :depth: 1
+
+
+Prerequisites
+-------------
+
+  ==================  =====================================================
+  Software            Needed for
+  ==================  =====================================================
+  KDE_ 4.x            dolphin and kdialog (and qdbus) for user interaction
+  libjpeg_            jpegtran for the actual transformations
+  `GNU BASH`_         or compatible for the main script
+  `GNU Make`_         or compatible for the package making and installation
+  `GNU sed`_          or compatible for the package making and installation
+  `Python docutils`_  to build HTML documentation
+  ==================  =====================================================
+
+
+Building and installing
+-----------------------
+
+Because this is brand new package I would recommend that you first run
+all ``make`` commands with the ``-n`` parameter to check if they do
+the "right thing"™ (ex: ``make -n localinstall``).
+
+
+RPM Package install
+...................
+
+To build the RPM package::
+
+    rpmbuild -tb jpeg_ltsm-*.tar.bz2
+
+To install or upgrade the RPM package::
+
+    sudo rpm -Uhv jpeg_ltsm-*.noarch.rpm
+
+To uninstall the RPM package::
+
+    sudo rpm -Uhv jpeg_ltsm-*.noarch.rpm
+
+.. note::
+    If you do not have/use sudo you should run the commands
+    without ``sudo`` infront as user root.
+
+
+Systemwide install
+..................
+
+If your system does not use package manager or you can't or don't
+want to build a package you can install with the following command::
+
+    sudo make install
+
+To uninstall::
+
+    sudo make uninstall
+
+.. note::
+    If you do not have/use sudo you should run the commands
+    without ``sudo`` infront as user root.
+
+
+Local install
+.............
+
+To install locally for your account only::
+
+    make localinstall
+
+To uninstall from your account::
+
+    make localuninstall
+
+
+Manual minimal install
+......................
+
+You may copy **jpeg_ltsm.sh** somewhere in your **$PATH** and **jpeg_ltsm.desktop**
+to your **$(kde4-config --localprefix)/share/kde4/services/** directory. To
+uninstall just delete both files.
+
+
+.. _KDE:             http://www.kde.org/
+.. _libjpeg:         http://www.ijg.org/
+.. _GNU BASH:        http://www.gnu.org/software/bash/
+.. _GNU Make:        http://www.gnu.org/software/make/
+.. _GNU sed:         http://www.gnu.org/software/sed/
+.. _Python docutils: http://docutils.sourceforge.net/

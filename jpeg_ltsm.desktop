@@ -1,0 +1,70 @@
+[Desktop Entry]
+Type=Service
+Actions=rotate_90;rotate_180;rotate_270;optimize;flip_horizontally;flip_vertically;transpose;transverse;grayscale
+Encoding=UTF-8
+Version=1.0.0
+ServiceTypes=KonqPopupMenu/Plugin,image/jpeg
+X-KDE-Priority=TopLevel
+X-KDE-Submenu=&JPEG Lossless Transformation
+X-KDE-Submenu[bg]=JPEG
+
+
+[Desktop Action rotate_90]
+Exec=jpeg_ltsm.sh '-rotate 90' %U
+Icon=image-jpeg
+Name=Rotate 90°
+Name[bg]=Завъртане на 90°
+
+
+[Desktop Action rotate_180]
+Exec=jpeg_ltsm.sh '-rotate 180' %U
+Icon=image-jpeg
+Name=Rotate 180°
+Name[bg]=Завъртане на 180°
+
+
+[Desktop Action rotate_270]
+Exec=jpeg_ltsm.sh '-rotate 270' %U
+Icon=image-jpeg
+Name=Rotate 270°
+Name[bg]=Завъртане на 270°
+
+
+[Desktop Action flip_horizontally]
+Exec=jpeg_ltsm.sh '-flip horizontal' %U
+Icon=image-jpeg
+Name=Flip Horizontally
+Name[bg]=Хоризонтално огледално завъртане
+
+
+[Desktop Action flip_vertically]
+Exec=jpeg_ltsm.sh '-flip vertical' %U
+Icon=image-jpeg
+Name=Flip Vertically
+Name[bg]=Вертикално огледално завъртане
+
+
+[Desktop Action optimize]
+Exec=jpeg_ltsm.sh '-optimize' %U
+Icon=image-jpeg
+Name=Optimize
+Name[bg]=Оптимизиране
+
+
+[Desktop Action transpose]
+Exec=jpeg_ltsm.sh '-transpose' %U
+Icon=image-jpeg
+Name=Transpose
+
+
+[Desktop Action transverse]
+Exec=jpeg_ltsm.sh '-transverse' %U
+Icon=image-jpeg
+Name=Transverse
+
+
+[Desktop Action grayscale]
+Exec=jpeg_ltsm.sh '-grayscale' %U
+Icon=image-jpeg
+Name=Grayscale (color is lost!)
+Name[bg]=Към черно-бяло (цвета се губи!)
