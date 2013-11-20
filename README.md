@@ -1,8 +1,5 @@
-JPEG Lossless Transformation Service Menu for KDE 4 README
-==========================================================
-
-
-.. contents::
+JPEG Lossless Transformation Service Menu for KDE 4
+===================================================
 
 
 Description
