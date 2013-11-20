@@ -47,13 +47,11 @@ Screenshots
 
 And because we all likes screenshots:
 
-|KDE Service Menu| |KDE Service Sub-Menu|
+![KDE Service Menu](jpeg_ltsm_menu.png)
 
-|Action Animation|
+![KDE Service Sub-Menu](jpeg_ltsm_submenu.png)
 
-.. |KDE Service Menu|     image:: jpeg_ltsm_menu.png
-.. |KDE Service Sub-Menu| image:: jpeg_ltsm_submenu.png
-.. |Action Animation|     image:: jpeg_ltsm_action.gif
+![Action Animation](jpeg_ltsm_action.gif)
 
 
 Motivation
